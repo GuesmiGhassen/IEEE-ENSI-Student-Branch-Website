@@ -1,0 +1,44 @@
+.grayscale-image {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+    cursor:pointer;
+  }
+.grayscale-image:hover {
+    filter: none;
+}
+/* Style de la ligne horizontale */
+.horizontal-line {
+  position: relative;
+}
+
+.horizontal-line::before,
+.horizontal-line::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-left:-40px;
+  margin-right:-40px;
+  width: 35%;
+  height: 1px; /* Épaisseur de la ligne */
+  background-color: rgb(153 27 27 / var(--tw-bg-opacity)); /* Couleur de la ligne */
+}
+
+.horizontal-line::before {
+  left: 0;
+}
+
+.horizontal-line::after {
+  right: 0;
+}
+@media (min-width:640px) and (max-width:1024px){
+  .horizontal-line::before,
+  .horizontal-line::after {
+    width: 43%;
+  }
+}
+@media (max-width:640px){
+  .horizontal-line::before,
+  .horizontal-line::after {
+    width: 0%;
+  }
+}

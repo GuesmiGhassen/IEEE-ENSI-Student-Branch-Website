@@ -1,0 +1,39 @@
+.title {
+    font-size: 35px; 
+    color: #07AFF0; 
+    font-size: 70px;
+    background-color: #1d202b;
+    height: 220px;
+    font-weight: bold ;
+    
+}
+.title img{
+    position: absolute;
+    top: 130px;
+    left: 28px;
+    width: 350px;
+}
+
+
+.all{
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.title .highlight {
+    color: #feda5e; 
+   margin-left: 60px;
+  
+}
+@media screen and (max-width: 600px){
+    .title img{
+        position: absolute;
+        top: 110px;
+        left: 75px;
+        width: 350px;
+    }
+   
+    
+}

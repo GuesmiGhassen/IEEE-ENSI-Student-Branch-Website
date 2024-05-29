@@ -1,0 +1,46 @@
+import React, { useState } from 'react';
+import './Scroll.css'; // Create this CSS file for styling
+
+const BackToTopButton = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  // Add scroll event listener to check if the user scrolls down
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  });
+
+  // Scroll to the top of the page when the button is clicked
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
+  return (
+    <button
+      className={`back-to-top-button ${isVisible ? 'visible' : ''}`}
+      onClick={scrollToTop}
+    >
+        <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fas"
+            class="h-4 w-4"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512">
+            <path
+            fill="currentColor"
+            d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path>
+        </svg>
+    </button>
+    
+  );
+};
+
+export default BackToTopButton;

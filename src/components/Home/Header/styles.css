@@ -1,0 +1,99 @@
+
+  body {
+    font-size: 14px;
+  }  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    object-fit: cover;
+  }
+  .swiper-pagination-bullet {
+    width:12px;
+    height:12px;
+  }
+  
+/* Styles généraux pour le texte */
+.paragraph {
+  text-align: center !important;
+  color: transparent;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-text-stroke : 0.1vw #fff;
+  width: 100%;
+  border-right: 3px solid rgb(255, 255, 255);
+}
+.paragraph2 {
+  text-align: center !important;
+  color: transparent;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-text-stroke : 0.1vw #078107;
+  width: 100%;
+  border-right: 3px solid #078107;
+}
+
+/* Animation pour le texte */
+.paragraph {
+  animation: animated-text 3s steps(1000, end) 1s 1 normal both;
+}
+.paragraph2 {
+  animation: animated-text2 3s steps(1000, end) 1s 1 normal both;
+}
+@keyframes animated-text2 {
+  0% {
+      width: 0vw;
+  }
+  100% {
+      width: 33vw;
+      color:#078107;
+  }
+}
+@media (max-width:770px){
+  .paragraph {
+    animation: animated-texte 3s steps(1000, end) 1s 1 normal both;
+  }
+  .paragraph2{
+    animation: animated-texte2 3s steps(1000, end) 1s 1 normal both;
+  }
+}
+/* Définition de l'animation */
+@keyframes animated-text {
+  0% {
+      width: 0vw;
+  }
+  100% {
+      width: 68vw;
+      color:white;
+  }
+}
+
+@keyframes animated-texte {
+  0% {
+      width: 0vw;
+  }
+  100% {
+      width: 100vw;
+      color:white;
+  }
+}
+@keyframes animated-texte2 {
+  0% {
+      width: 0vw;
+  }
+  100% {
+      width: 100vw;
+      color:#078107;
+  }
+}

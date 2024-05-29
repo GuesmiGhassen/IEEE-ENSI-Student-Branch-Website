@@ -1,0 +1,248 @@
+
+.cadregods{
+    background-color:#1d202b ;
+    margin-top: 90px;
+    border-radius: 30px;
+    align-self: center;
+    padding: 40px;
+    margin-bottom: 70px;
+    border: 1px solid ;
+}
+
+.quote2{
+    color:#b0bdc1 ;
+    margin-left: 160px;
+    font-family: 'Arial Black', sans-serif;
+      font-size: 22px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px; 
+}
+/*the header : register*/
+
+.titlegods {
+    color: #0061A8; 
+    font-size: 70px;
+    background-color: #1d202b;
+    height: 260px;
+    font-weight: bold ;
+}
+.titlegods img{
+    position: absolute;
+    top: 130px;
+    left: 40px;
+    width: 350px;
+}
+
+
+.allgods{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.titlegods .highlightgods {
+    color: #8D7D44; 
+    margin-left: 60px;
+}
+
+.containergods{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.checkboxgods{
+    color: #feda5e;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    transform: scale(1.5);
+    margin-left: 185px;
+}
+
+.inputgods{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #feda5e;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    font-size: 24px;
+}
+.inputgods input{
+    height: 35px;
+    width: 400px;
+    background-color: #b0bdc1;
+    border-radius: 5px;
+    outline: none;
+    background: transparent;
+    border: none;
+    padding-left:10px;
+    border-bottom: 2.5px solid #b0bdc1;
+    color: #b0bdc1;
+    font-size: 14px;
+}
+
+.statusgods{
+    height:50px ;
+}
+
+
+
+/*the status select box*/
+
+.inputgods select {
+    height: 35px; 
+    width: 400px;
+    border: none;
+    border-bottom: 2.5px solid #b0bdc1;
+    outline: none;
+    background: transparent;
+    color: #b0bdc1;
+    font-size: 14px;
+    border-radius: 5px; 
+    padding-left:10px;
+}
+/*  the options box  */
+.inputgods select option {
+    background-color: #2d3131; 
+   
+}
+
+.centerSubmitgods{
+    align-items: center;
+    display:flex;
+    justify-content: center;
+}
+.quotegods{
+      font-size: 28px;
+      font-weight: bold;
+      color: #b0bdc1;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      display:flex;
+      justify-content: center;
+   
+}
+.submitgods{
+    height: 70px;
+    width: 250px; 
+    background-color: #feda5e;
+    border: 2px solid #070707; 
+    border-radius: 10px;
+    outline: none;
+    color: #020202;
+    font-size: 30px; 
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    margin-top: 150px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    align-self: auto;
+    cursor: pointer;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.submitgods:hover {
+    background-color: #7692a1;
+    border-color: #7692a1;
+    box-shadow: 3px 3px 8px #feda5e; 
+}
+
+.div1gods{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.inputgods {
+    margin-bottom: 50px; /* Adjust the margin as needed to add space between inputs */
+}
+
+.inputgods label {
+    display: block; /* Ensures labels are displayed as block elements for proper spacing */
+}
+
+
+
+/*PHONE SCREEN*/
+
+/*PHONE SCREEN*/
+
+/*PHONE SCREEN*/
+
+/*PHONE SCREEN*/
+
+/*PHONE SCREEN*/
+@media screen and (max-width: 600px) {
+    .inputgods input{
+        font-size: 12px;
+    }
+    .inputgods select {
+        font-size: 12px;
+    }
+    .inputgods{
+        font-size: 23px;
+    }    
+    .cadregods {
+        margin-top: 60px;
+        margin-bottom: 20px;
+        padding: 40px;
+        width:95%;
+    }
+
+    .titlegods {
+        font-size: 42px;
+        background-color: #1d202b;
+        height: 170px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        position:relative;
+        top:20px;
+    }
+    
+    .titlegods .allgods {
+        padding-top:32px;
+    }
+    
+    .titlegods .highlightgods {
+        margin-left: 10
+    }
+    
+    .titlegods img {
+        width: 210px;
+        margin-right: auto;
+        position:relative;
+        top:20px;
+        left:-192px;
+    }
+    
+
+    .checkboxgods {
+        margin-left: 0;
+        width: 250px;
+        margin-left: 45px;
+        margin-bottom: 65px;
+    }
+
+    .inputgods input,
+    .inputgods select {
+        width: 100%;
+    }
+
+    .div1gods {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .submitgods {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    .centerSubmitgods{
+        margin-left: 20px;
+    }
+    .quotegods{
+        margin-left: 1px;
+        font-size: 17px;
+
+    }
+
+}
