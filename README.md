@@ -41,6 +41,7 @@ To explore the codebase or contribute to the project, clone the repository and f
 4. **Running the Website Locally:**
    After setting up the environment, you can run the website locally to see it in action. Execute the following command in the project directory:
    > npm run start
+   
    This command starts a local development server. By default, the website will be available at `http://localhost:3000`. Open this URL in your web browser to view the website.
 
 5. **Building for Production:**
