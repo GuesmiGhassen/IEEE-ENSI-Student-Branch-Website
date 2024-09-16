@@ -15,7 +15,7 @@ function Wie() {
 
   // Define the title and favicon for this page
   const pageTitle = "WIE ENSI AG";
-  const newFavicon = wie;
+  
 
   useEffect(() => {
     // Update the title of the page
@@ -24,11 +24,11 @@ function Wie() {
     // Update the favicon
     const link = document.querySelector("link[rel~='icon']");
   if (link) {
-    link.href = newFavicon;
+    link.href = wie;
   } else {
     const newLink = document.createElement('link');
     newLink.rel = 'icon';
-    newLink.href = newFavicon;
+    newLink.href = wie;
     newLink.id = 'dynamic-favicon';
     document.head.appendChild(newLink);
   }

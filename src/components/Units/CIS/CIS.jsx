@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { React, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Navbar from './Navbar'
 import Hero from './Hero'
@@ -13,7 +13,6 @@ function CIS() {
 
   // Define the title and favicon for this page
   const pageTitle = "CIS ENSI SBC";
-  const newFavicon = cis;
 
   useEffect(() => {
     // Update the title of the page
@@ -22,11 +21,11 @@ function CIS() {
     // Update the favicon
     const link = document.querySelector("link[rel~='icon']");
   if (link) {
-    link.href = newFavicon;
+    link.href = cis;
   } else {
     const newLink = document.createElement('link');
     newLink.rel = 'icon';
-    newLink.href = newFavicon;
+    newLink.href = cis;
     newLink.id = 'dynamic-favicon';
     document.head.appendChild(newLink);
   }

@@ -16,7 +16,6 @@ function CS() {
 
   // Define the title and favicon for this page
   const pageTitle = "CS ENSI SBC";
-  const newFavicon = cs;
 
   useEffect(() => {
     // Update the title of the page
@@ -25,11 +24,11 @@ function CS() {
     // Update the favicon
     const link = document.querySelector("link[rel~='icon']");
   if (link) {
-    link.href = newFavicon;
+    link.href = cs;
   } else {
     const newLink = document.createElement('link');
     newLink.rel = 'icon';
-    newLink.href = newFavicon;
+    newLink.href = cs;
     newLink.id = 'dynamic-favicon';
     document.head.appendChild(newLink);
   }
